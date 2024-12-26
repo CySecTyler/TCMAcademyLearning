@@ -10,9 +10,9 @@ $outputFile = "$env:TEMP\eicar.txt"
 $scriptPath = "$env:USERPROFILE\Documents\FrenchieTest.ps1"
 $downloadsPath = "$env:USERPROFILE\Downloads"
 #Variables for running netcat command
-$attackerIP = "192.168.111.1" #MyownIP to make this safer
-$attackerPort = "0809"
-$ncCommand = "ncat -lvp 1809"
+$attackerIP = "" #MyownIP to make this safer
+$attackerPort = ""
+$ncCommand = ""
 
 
 
@@ -64,4 +64,4 @@ catch {
     }
 #Start-Process -FilePath "cmd.exe" -ArgumentList "\c", $ncCommand -NoNewWindow -PassThru
 Invoke-WebRequest -Uri $url1 -OutFile $outputPath
-Write-Host "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
+#Write-Host "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*"
